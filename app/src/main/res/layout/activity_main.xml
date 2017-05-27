@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ytw.example.animationdemo.MainActivity">
+
+  <TextView
+      android:id="@+id/tv_info"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ellipsize="end"
+      android:lines="3"
+      android:layout_below="@+id/iv_head"
+      android:padding="16dp"
+      android:text="《速度与激情》是罗伯·科恩执导的动作犯罪类电影。由保罗·沃克、范·迪塞尔、乔丹娜·布鲁斯特和米歇尔·罗德里格兹主演，于2001年6月22日在美国上映。[1]
+该剧讲述了卧底探员布莱恩凭借出色的车技赢得了帮派老大多米尼克的欣赏和信任，同时也赢得了多米尼克的妹妹米娅的芳心。他和这个帮派老大逐渐建立了友谊，两人成了互相尊重、互相信任的好朋友。受到友情和爱情的双重羁绊，布莱恩陷入了困境。"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_info">
+
+    <ImageView
+        android:id="@+id/btn_start"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_bookmark"/>
+
+    <com.ytw.example.animationdemo.MyDrawingView
+        android:id="@+id/my_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  </RelativeLayout>
+
+  <ImageView
+      android:id="@+id/iv_head"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:src="@color/colorPrimary"/>
+</RelativeLayout>
